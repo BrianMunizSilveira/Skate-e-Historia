@@ -37,3 +37,27 @@ newsletterForm.addEventListener('submit', (e) => {
 //   gifElement.src = gifElement.getAttribute('data-static'); // Volta para a imagem estática
 // });
 
+// Funcionalidade do menu hambúrguer
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+
+// Fechar o menu ao clicar em um link
+document.querySelectorAll('.nav-menu .link').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
+
+// Fechar o menu ao clicar fora dele
+document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+    }
+});

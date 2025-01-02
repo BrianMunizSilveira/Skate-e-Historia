@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roll and Rise - Blog de Skate</title>
     <link rel="stylesheet" href="./feed.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -52,7 +55,8 @@
                         <img src="/image/1.jpg" alt="Imagem 1" srcset="">
                         <div class="post-info">
                             <h3>A Evolução do Skate: Das Origens aos Dias Atuais</h3>
-                            <p>Explore a fascinante jornada do skate, desde suas humildes origens até se tornar um esporte olímpico.</p>
+                            <p>Explore a fascinante jornada do skate, desde suas humildes origens até se tornar um
+                                esporte olímpico.</p>
                             <a href="#" class="btn">Ler Mais</a>
                         </div>
                     </article>
@@ -132,27 +136,71 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#featured">Posts em Destaque</a></li>
-                        <li><a href="#skaters">Skatistas</a></li>
-                        <li><a href="#categories">Categorias</a></li>
-                        <li><a href="#newsletter">Newsletter</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <a href="#" aria-label="Facebook">F</a>
-                    <a href="#" aria-label="Instagram">I</a>
-                    <a href="#" aria-label="Twitter">T</a>
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="footer-grid">
+            <!-- Coluna 1: Sobre -->
+            <div class="footer-column">
+                <h3>Roll and Rise</h3>
+                <p>Seu portal definitivo para o mundo do skate, trazendo conteúdo de qualidade sobre street, vertical,
+                    park e toda a cultura do skateboarding.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
                 </div>
             </div>
-            <p>&copy; 2023 Roll and Rise. Todos os direitos reservados.</p>
+
+            <!-- Coluna 2: Links Rápidos -->
+            <div class="footer-column">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Página Inicial</a></li>
+                    <li><a href="#featured">Posts em Destaque</a></li>
+                    <li><a href="#skaters">Skatistas</a></li>
+                    <li><a href="#categories">Categorias</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Categorias -->
+            <div class="footer-column">
+                <h4>Categorias</h4>
+                <ul>
+                    <li><a href="#street">Street</a></li>
+                    <li><a href="#vert">Vertical</a></li>
+                    <li><a href="#park">Park</a></li>
+                    <li><a href="#longboard">Longboard</a></li>
+                    <li><a href="#freestyle">Freestyle</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Contato -->
+            <div class="footer-column">
+                <h4>Fale Conosco</h4>
+                <ul class="contact-info">
+                    <li><i class="bi bi-envelope"></i> contato@rollandrise.com.br</li>
+                    <li><i class="bi bi-phone"></i> (11) 99999-9999</li>
+                    <li><i class="bi bi-geo-alt"></i> São Paulo, SP</li>
+                </ul>
+                <button class="newsletter-btn">Assinar Newsletter</button>
+            </div>
+        </div>
+
+        <!-- Sub-footer -->
+        <div class="sub-footer">
+            <div class="sub-footer-content">
+                <p class="copyright">&copy; 2024 Roll and Rise. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Política de Privacidade</a>
+                    <a href="#terms">Termos de Uso</a>
+                    <a href="#cookies">Política de Cookies</a>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="./feed.js"></script>
 </body>
+
 </html>

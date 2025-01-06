@@ -43,6 +43,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: transform 0.3s ease;
 }
 
 .header-content {
@@ -85,6 +86,7 @@ nav ul li a:hover {
     border: none;
     cursor: pointer;
     padding: 0;
+    transition: transform 0.3s ease;
 }
 
 .hamburger span {
@@ -94,6 +96,41 @@ nav ul li a:hover {
     background-color: #333;
     margin: 5px 0;
     transition: 0.4s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nav-menu {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.nav-menu.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Hero Section */
